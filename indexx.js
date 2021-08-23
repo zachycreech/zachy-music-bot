@@ -113,14 +113,14 @@ Please provide a value to select one of the search results ranging from 1-5.
                 if (serverQueue && serverQueue.playing) {
                     serverQueue.playing = false;
                     serverQueue.connection.dispatcher.pause();
-                    return msg.channel.send(' Paused it for you, massa!');
+                    return msg.channel.send(' Paused it for you!');
                 }
                 return msg.channel.send('nothing playing.');
             case 'resume':
                 if (serverQueue && !serverQueue.playing) {
                     serverQueue.playing = true;
                     serverQueue.connection.dispatcher.resume();
-                    return msg.channel.send('Resumed the music for you, massa!');
+                    return msg.channel.send('Resumed the music for you!');
                 }
                 return msg.channel.send('nothing playing.');
 
